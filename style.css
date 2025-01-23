@@ -3,13 +3,282 @@
 /* General styles */
 body {
   font-family: Montserrat;
+  font-size: 1em;
 }
 
+.blue-button{
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    padding: 1.15em 1.94em;
+    border-radius: 4.8rem;
+    border: none;
+}
+
+.title-main{
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    font-size: 3.75em;
+    
+}
+
+.title-goal{
+    font-size: 1.68em;
+    line-height: 2rem;
+}
+
+.title-support{
+    color: rgba(115, 166, 177, 1);
+    font-size: 1.25em;
+    line-height: 1.5rem;
+}
+
+.desc-text{
+    font-size: 1.25em;
+    line-height: 1.25em;
+}
+
+.bold-text{
+    font-weight: bold;
+}
 /* Header styles */
+
+.header-container{
+    display: flex;
+    align-items: center;
+    padding: 2.2em 3.94em;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
 .logo {
+    aspect-ratio: 1;
+    width: 4rem;
 }
 
 .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 3.1em;
 }
 
 /* First screen */
+
+.first-screen{
+    background-image: url(./assets/images/first_screen_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.first-screen-container{
+    display: grid;
+    gap: 1.875em;
+    margin-left: 6.56em;
+    width: 50%;
+}
+
+.main-title{
+    width: 80%;
+    font-weight: 800;
+    font-size: 4.06em;
+    line-height: 0.95;
+    color: white;
+}
+
+.main-description{
+    width: 50%;
+    color: black;
+}
+
+.white-button {
+    color: black;
+    background-color: white;
+    border: none;
+    width: 30%;
+}
+
+/* Description screen */
+
+
+.description-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding: 13.75em 4.4375em;
+}
+
+.description-title{
+    padding: 10em 5.43em;
+    padding-top: 0;
+    text-align: center;
+    
+}
+
+.description-block{
+    display: flex;
+    background-color: #F1FDFF;
+    padding: 2vh 3vw;
+    gap: 3.75em;
+}
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+.desc-header{
+    text-transform: uppercase;
+    font-size: 2.875em;
+}
+
+.block-img {
+    max-width: 40vw;
+}
+   
+
+/* Mission screen */
+
+.mission-screen{
+    padding: 13.75em 4.4375em;
+}
+
+.mission-block{
+    display: flex;
+    align-items: center;
+    background: rgba(241, 253, 255, 1);
+    padding: 5em 3em;
+}
+
+.mission-description{
+    font-size: 1.6875em;
+    line-height: 2rem;
+    flex: 3;
+}
+
+.mission-img{
+    position: relative;
+    flex: 3;
+}
+
+.grey-lines-img{
+    position: absolute;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.hugging-children-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 30vw;
+}
+
+/* Support-us screen */
+
+.support-us-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3.125em;
+    padding: 13.75em 4.4375em;
+    padding-top: 0;
+}
+
+.support-goal .title-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+}
+
+.text-separator {
+    display: inline-block;
+    width: 2px;
+    height: 3.75rem;
+    background-color: rgba(154, 210, 222, 1);
+}
+
+/* Contacts screen */
+
+.contacts-screen{
+    padding: 13.75em 4.4375em;
+    background: rgba(249, 250, 223, 1);
+}
+
+.contacts-block{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.contacts-block .title-main{
+    width: 45%;
+    text-align: center;
+}
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 4rem;
+}
+
+.contacts-icon{
+    aspect-ratio: 1;
+    width: 2rem;
+    padding-right: 1em;
+}
+
+.phone-number-wrapper{
+    width: 60%;
+}
+
+.mail-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75rem;
+    background-color: white;
+}
+
+.mail-img{
+    width: 50%;
+}
+
+.news-block{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.form-input{
+    border-radius: 60px;
+    border:none;
+    background-color: rgba(249, 250, 223, 1);
+    width: 100%;
+    height: 4rem;
+    padding-left: 3rem;
+}
+
+.form-input::placeholder{
+    color: black;
+    font-weight: 400;
+}

@@ -1,44 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <header class="header-container">
         <img src="./assets/images/logo.png" alt="Круглий чорний логотип" class="logo">
-        <nav>
-            <ul class="menu-list">
-                <li class="menu-item">Контакти</li>
-                <li class="menu-item">Головна</li>
-                <li class="menu-item">Із чим допомагаємо</li>
-                <li class="menu-item blue-button">Підтримати фонд</li>
-            </ul>
-        </nav>
+        <ul class="menu-list">
+            <li class="menu-item">Контакти</li>
+            <li class="menu-item">Головна</li>
+            <li class="menu-item">Із чим допомагаємо</li>
+            <li class="menu-item blue-button">Підтримати фонд</li>
+        </ul>
     </header>
     <section class="first-screen">
-
+        <article class="first-screen-container">
+            <h1 class="main-title">Фонд підтримки постраждалих під час війни</h1>
+            <h3 class="main-description">Ми хочемо допомогти кожному, хто постраждав під час війни</h3>
+            <button class="blue-button white-button"> Підтримати фонд</button>
+        </article>
     </section>
     <section class="description-screen">
-        <article class="description-header">
-
+        <article class="description-title">
+            <h2 class="title-main">Ми - фонд підтримки постраждалих від війни</h2>
+            <h4 class="title-goal">Наша мета – психологічна та гуманітарна допомога українцям</h4>
+            <h5 class="title-support">Кожен, хто звернеться, отримає допомогу, яка у наших силах</h5>
         </article>
         <article class="description-block">
-
+            <div class="flex-wrapper">
+                <h3 class="desc-header">Реабілітаційний центр</h3>
+                <p class="desc-text">Ми допомагаємо людям, які постраждали знайти правильне лікування. У нашому фонді є
+                    чотири напрями:
+                    фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо
+                    заклади-партнери, де швидко та якісно можуть надати допомогу.</p>
+            </div>
+            <img src="./assets/images/rehabilitation_center.png" alt="Картинка чоловіка з протезом замість ноги"
+                class="block-img">
         </article>
         <article class="description-block">
-
-        </article>
-        <article class="description-block">
-
+            <div class="flex-wrapper">
+                <h3 class="desc-header">Робота з дітьми</h3>
+                <p class="desc-text">Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка
+                    дорослих. Тому наш фонд збирає
+                    речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих
+                    прсихотерапевтів.
+                </p>
+            </div>
+            <img src="./assets/images/work_with_children.png" alt="Картинка з майстер-класом з ліплення для дітей"
+                class="block-img">
         </article>
         <button class="blue-button">
             Дізнатися більше
         </button>
     </section>
-    
-
+    <section class="mission-screen">
+        <article class="mission-block">
+            <h4 class="mission-description">Наша місія – щоб кожен українець мав можливість отримати допомогу й не
+                залишився наодинці зі своїми проблемами</h4>
+            <div class="mission-img">
+                <img src="./assets/images/mission_background.png" alt="Фонові сірі полоси" class="grey-lines-img">
+                <img src="./assets/images/hugging_children.png" alt="Дві дитини, що обіймаються"
+                    class="hugging-children-img">
+            </div>
+        </article>
+    </section>
+    <section class="support-us-screen">
+        <article class="support-header">
+            <h2 class="title-main">Підтримайте нашу роботу!</h2>
+            <h5 class="title-support">Усі ваші донати йдуть саме на роботу фонду, заробітні плати ми виплачуємо з коштів
+                грантодавців</h5>
+        </article>
+        <article class="support-goal">
+            <h4 class="title-goal">Наша мета 10 000 000 гривень! </h4>
+            <h2 class="title-main"> 00 <span class="text-separator"></span> 230 <span class="text-separator"></span> 025
+            </h2>
+        </article>
+        <button class="blue-button">
+            Дізнатися більше
+        </button>
+    </section>
+    <section class="contacts-screen">
+        <article class="contacts-block">
+            <h2 class="title-main">Контакти</h2>
+            <article class="contacts-info">
+                <div class="phone-number-wrapper">
+                    <img src="./assets/icons/phone.png" alt="Іконка трубки телефону" class="contacts-icon">
+                    <p class="desc-text">Якщо у вас виникають питання – телефонуйте за номером <span class="bold-text">
+                            <br>0-987-654-321</span></p>
+                </div>
+                <div class="social-networks-wrapper">
+                    <img src="./assets/icons/telegram.png" alt="Іконка логотипу телеграму" class="contacts-icon">
+                    <img src="./assets/icons/viber.png" alt="Іконка логотипу вайберу" class="contacts-icon">
+                    <p class="desc-text">Або пишіть нам у чат-бот</p>
+                </div>
+            </article>
+        </article>
+        <article class="mail-block">
+            <img src="./assets/images/mail.png" alt="Малюнок листа у конверті" class="mail-img">
+            <article class="news-block">
+                <h4 class="title-goal">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</h4>
+                <input type="text" placeholder="Ім'я" class="form-input desc-text">
+                <input type="email" placeholder="Емейл" class="form-input desc-text">
+                <button class="blue-button news-button">Підписатися</button>
+            </article>
+        </article>
+    </section>
 </body>
+
 </html>

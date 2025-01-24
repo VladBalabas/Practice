@@ -223,6 +223,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 13.75em 4.4375em;
+    padding-top: 3em;
     background: rgba(249, 250, 223, 1);
     gap: 7vh;
 
@@ -280,9 +281,14 @@ body {
     background-color: rgba(249, 250, 223, 1);
     height: 4rem;
     padding-left: 3rem;
+
 }
 
 .form-input::placeholder{
     color: black;
-    font-weight: 400;
+    font-weight: 100;
+}
+
+.news-button{
+    height: 4em;
 }
